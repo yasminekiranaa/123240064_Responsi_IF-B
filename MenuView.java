@@ -4,16 +4,24 @@
  */
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
 /**
  *
  * @author Lab Informatika
  */
 public class MenuView {
-    JLabel label = new JLabel (
-            "Selamat Datang, " + username + "!"
-    );
+    JLabel label;
     
     JButton btnDosen = new JButton("Data Dosen");
     
     JButton btnMahasiswa = new JButton("Data Mahasiswa");
+
+    public MenuView() {
+        String username = null;
+        this.label = new JLabel (
+                "Selamat Datang, " + username + "!"
+        );
+    }
 }
