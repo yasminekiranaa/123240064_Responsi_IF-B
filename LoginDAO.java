@@ -9,7 +9,7 @@ package dao;
  * @author Lab Informatika
  */
 public class LoginDAO {
-    String sql = "Selsect * FROM users WHERE username=? AND password=?";
+    String sql = "Select * FROM users WHERE username=? AND password=?";
     
     PreparedStatement ps = config.prepareStatement(sql);
     
